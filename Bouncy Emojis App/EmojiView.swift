@@ -24,8 +24,15 @@ struct EmojiView: View {
                             Button {
                                 selectedEmojis.append(emoji)
                             } label: {
-                                Text(emoji)
-                                    .font(.system(size: 60))
+                                ZStack {
+                                    Color.init(red: 0.2,
+                                               green: 0.2,
+                                               blue: 0.2,
+                                               opacity: 0.2)
+                                        .cornerRadius(10)
+                                    Text(emoji)
+                                        .font(.system(size: 60))
+                                }.frame(height: 80)
                             }
                         }
                         Spacer()
