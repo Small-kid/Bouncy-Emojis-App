@@ -1,15 +1,35 @@
 //
 //  ContentView.swift
-//  Bouncy Emojis App
+//  gridAndUIKITPractice
 //
-//  Created by swift_user on 23/7/22.
+//  Created by TAY KAI QUAN on 23/7/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+
+    var emojiSets = [
+        EmojiSet(name: "Fruits", emojis: ["🍌", "🍎", "🍓", "🍉", "🍍", "🥑"]),
+        EmojiSet(name: "Candy", emojis: ["🍫", "🍭", "🍬"])
+    ]
+
     var body: some View {
-        
+        NavigationView {
+            List(emojiSets) { emojiSet in
+                NavigationLink {
+                    EmojiView(emojiSet: emojiSet)
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text(emojiSet.name)
+                            .font(.headline)
+                        Text(emojiSet.emojis.joined())
+                    }
+                }
+            }
+            .navigationTitle("Emoji Party :D")
+        }
+        .navigationViewStyle(.stack)
     }
 }
 
