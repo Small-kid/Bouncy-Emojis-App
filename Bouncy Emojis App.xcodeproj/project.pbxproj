@@ -13,10 +13,13 @@
 		9312D4A1288B8E7D008AD79C /* EmojiSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312D4A0288B8E7D008AD79C /* EmojiSet.swift */; };
 		9312D4A3288B8E82008AD79C /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312D4A2288B8E82008AD79C /* EmojiView.swift */; };
 		9312D4A5288B9659008AD79C /* EmojiSetCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312D4A4288B9658008AD79C /* EmojiSetCreateView.swift */; };
+		9E16C2A5288B9D3200E020FD /* Crash Junk 05 copy_[cut_1sec].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E16C2A3288B9D3200E020FD /* Crash Junk 05 copy_[cut_1sec].mp3 */; };
+		9E16C2A6288B9D3200E020FD /* Impact Metal Hit Reverb 01_[cut_1sec].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E16C2A4288B9D3200E020FD /* Impact Metal Hit Reverb 01_[cut_1sec].mp3 */; };
 		CE6F955B288B8404008E7843 /* Bouncy_Emojis_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F955A288B8404008E7843 /* Bouncy_Emojis_AppApp.swift */; };
 		CE6F955D288B8404008E7843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F955C288B8404008E7843 /* ContentView.swift */; };
 		CE6F955F288B840B008E7843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6F955E288B840B008E7843 /* Assets.xcassets */; };
 		CE6F9562288B840B008E7843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6F9561288B840B008E7843 /* Preview Assets.xcassets */; };
+		D9F347AC288B9EC30075E5B8 /* Subsonic in Frameworks */ = {isa = PBXBuildFile; productRef = D9F347AB288B9EC30075E5B8 /* Subsonic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		9312D4A0288B8E7D008AD79C /* EmojiSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiSet.swift; sourceTree = "<group>"; };
 		9312D4A2288B8E82008AD79C /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		9312D4A4288B9658008AD79C /* EmojiSetCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSetCreateView.swift; sourceTree = "<group>"; };
+		9E16C2A3288B9D3200E020FD /* Crash Junk 05 copy_[cut_1sec].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Crash Junk 05 copy_[cut_1sec].mp3"; sourceTree = "<group>"; };
+		9E16C2A4288B9D3200E020FD /* Impact Metal Hit Reverb 01_[cut_1sec].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Impact Metal Hit Reverb 01_[cut_1sec].mp3"; sourceTree = "<group>"; };
 		CE6F9557288B8404008E7843 /* Bouncy Emojis App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bouncy Emojis App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6F955A288B8404008E7843 /* Bouncy_Emojis_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouncy_Emojis_AppApp.swift; sourceTree = "<group>"; };
 		CE6F955C288B8404008E7843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F347AC288B9EC30075E5B8 /* Subsonic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,8 @@
 				9312D4A2288B8E82008AD79C /* EmojiView.swift */,
 				CE6F955C288B8404008E7843 /* ContentView.swift */,
 				9312D4A4288B9658008AD79C /* EmojiSetCreateView.swift */,
+				9E16C2A3288B9D3200E020FD /* Crash Junk 05 copy_[cut_1sec].mp3 */,
+				9E16C2A4288B9D3200E020FD /* Impact Metal Hit Reverb 01_[cut_1sec].mp3 */,
 				CE6F955E288B840B008E7843 /* Assets.xcassets */,
 				CE6F9560288B840B008E7843 /* Preview Content */,
 			);
@@ -101,6 +109,9 @@
 			dependencies = (
 			);
 			name = "Bouncy Emojis App";
+			packageProductDependencies = (
+				D9F347AB288B9EC30075E5B8 /* Subsonic */,
+			);
 			productName = "Bouncy Emojis App";
 			productReference = CE6F9557288B8404008E7843 /* Bouncy Emojis App.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +140,9 @@
 				Base,
 			);
 			mainGroup = CE6F954E288B8403008E7843;
+			packageReferences = (
+				D9F347AA288B9EC30075E5B8 /* XCRemoteSwiftPackageReference "Subsonic" */,
+			);
 			productRefGroup = CE6F9558288B8404008E7843 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +159,8 @@
 			files = (
 				CE6F9562288B840B008E7843 /* Preview Assets.xcassets in Resources */,
 				CE6F955F288B840B008E7843 /* Assets.xcassets in Resources */,
+				9E16C2A6288B9D3200E020FD /* Impact Metal Hit Reverb 01_[cut_1sec].mp3 in Resources */,
+				9E16C2A5288B9D3200E020FD /* Crash Junk 05 copy_[cut_1sec].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9F347AA288B9EC30075E5B8 /* XCRemoteSwiftPackageReference "Subsonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Subsonic.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9F347AB288B9EC30075E5B8 /* Subsonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9F347AA288B9EC30075E5B8 /* XCRemoteSwiftPackageReference "Subsonic" */;
+			productName = Subsonic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE6F954F288B8403008E7843 /* Project object */;
 }
