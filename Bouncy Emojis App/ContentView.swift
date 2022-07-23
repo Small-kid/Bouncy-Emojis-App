@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
 
     var emojiSets = [
-        EmojiSet(name: "Fruits", emojis: ["🍌", "🍎", "🍓", "🍉", "🍍", "🥑"]),
-        EmojiSet(name: "Candy", emojis: ["🍫", "🍭", "🍬"]),
-        EmojiSet(name: "Dora Series", emojis: ["👧", "🥾", "🗺", "🎒", "🦊", "🐿", "🐮", "🐓"])
+        EmojiSet(name: "Fruits",
+                 emojis: ["🍌", "🍎", "🍓", "🍉", "🍍", "🥑"],
+                 color: .init(red: 0.5, green: 0.8, blue: 0.5)),
+        EmojiSet(name: "Candy", emojis: ["🍫", "🍭", "🍬"],
+                 color: .init(red: 0.5, green: 0.5, blue: 0.8)),
+        EmojiSet(name: "Dora Series", emojis: ["👧", "🥾", "🗺", "🎒", "🦊", "🐿", "🐮", "🐓"],
+                 color: .init(red: 0.8, green: 0.5, blue: 0.8))
     ]
 
     var body: some View {

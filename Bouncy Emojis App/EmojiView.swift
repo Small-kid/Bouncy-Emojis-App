@@ -14,15 +14,23 @@ struct EmojiView: View {
 
     var body: some View {
         VStack {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                ForEach(emojiSet.emojis, id: \.self) { emoji in
-                    Button {
-                        selectedEmojis.append(emoji)
-                    } label: {
-                        Text(emoji)
-                            .font(.system(size: 100))
+            ZStack {
+                emojiSet.color
+                    .frame(height: 100)
+                ScrollView(.horizontal) {
+                    HStack {
+                        Spacer()
+                        ForEach(emojiSet.emojis, id: \.self) { emoji in
+                            Button {
+                                selectedEmojis.append(emoji)
+                            } label: {
+                                Text(emoji)
+                                    .font(.system(size: 60))
+                            }
+                        }
+                        Spacer()
                     }
-                }
+                }.frame(height: 100)
             }
             BouncyView(emojis: selectedEmojis) { surface in
                 switch surface {
@@ -32,7 +40,7 @@ struct EmojiView: View {
                     print("Crashed into wall")
                 }
             }
-        }
+        }.navigationTitle(emojiSet.name)
     }
 }
 
