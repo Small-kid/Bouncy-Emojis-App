@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @State var isCreatingNewEmojiSet = false
+
     @State var emojiSets = [
         EmojiSet(name: "Fruits",
                  emojis: ["🍌", "🍎", "🍓", "🍉", "🍍", "🥑"],
@@ -46,10 +48,13 @@ struct ContentView: View {
                     EditButton()
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { } label: {
+                    Button { isCreatingNewEmojiSet = true } label: {
                         Image(systemName: "plus")
                     }
                 }
+            }
+            .sheet(isPresented: $isCreatingNewEmojiSet) {
+                EmojiSetCreateView(emojiSets: $emojiSets)
             }
         }
         .navigationViewStyle(.stack)
